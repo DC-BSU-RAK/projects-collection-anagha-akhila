@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAppClose"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="✕"
+        android:textColor="#FF5555"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:contentDescription="@string/desc_app_close"
+        app:layout_constraintTop_toTopOf="@id/tvTitle"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_title"
+        android:textColor="#00FF00"
+        android:textSize="28sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnAppClose"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnInfo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="@string/info_emoji"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:contentDescription="@string/desc_btn_info"
+        app:layout_constraintTop_toTopOf="@id/tvTitle"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/screenContainer"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tap_to_begin"
+            android:textColor="#00FF00"
+            android:textSize="20sp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvGenreLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/genre_none"
+            android:textColor="#888888"
+            android:textSize="13sp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@id/tvDisplay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/operatorRowLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/subBtnPlus" android:layout_width="54dp" android:layout_height="48dp" android:text="@string/op_plus" android:textColor="#000000" android:textSize="18sp" android:textStyle="bold" android:fontFamily="casual" android:layout_marginHorizontal="6dp" android:padding="0dp" android:contentDescription="@string/desc_op_plus"/>
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/subBtnClr" android:layout_width="64dp" android:layout_height="48dp" android:text="@string/op_clr" android:textColor="#FF5555" android:textSize="14sp" android:textStyle="bold" android:fontFamily="casual" android:layout_marginHorizontal="6dp" android:padding="0dp" android:contentDescription="@string/desc_op_clr"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nan_text"
+            android:textColor="#00FF00"
+            android:textSize="12sp"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="6dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/calculatorRowsWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        app:layout_constraintTop_toBottomOf="@id/screenContainer"
+        app:layout_constraintBottom_toTopOf="@id/btnDecode">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout android:id="@+id/layoutWizard" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="4dp" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true" android:contentDescription="@string/desc_wizard"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🧙‍♂️" android:textSize="32sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_wizard" android:textColor="#000000" android:textSize="13sp" android:fontFamily="casual" android:textStyle="bold"/></LinearLayout>
+            <LinearLayout android:id="@+id/layoutCowboy" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="4dp" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true" android:contentDescription="@string/desc_cowboy"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🤠" android:textSize="32sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_cowboy" android:textColor="#000000" android:textSize="13sp" android:fontFamily="casual" android:textStyle="bold"/></LinearLayout>
+            <LinearLayout android:id="@+id/layoutAlien" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="4dp" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true" android:contentDescription="@string/desc_alien"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👽" android:textSize="32sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_alien" android:textColor="#000000" android:textSize="13sp" android:fontFamily="casual" android:textStyle="bold"/></LinearLayout>
+            <LinearLayout android:id="@+id/layoutShark" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="4dp" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true" android:contentDescription="@string/desc_shark"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🦈" android:textSize="32sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_shark" android:textColor="#000000" android:textSize="13sp" android:fontFamily="casual" android:textStyle="bold"/></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout android:id="@+id/layoutCastle" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="4dp" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true" android:contentDescription="@string/desc_castle"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏰" android:textSize="32sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_castle" android:textColor="#000000" android:textSize="13sp" android:fontFamily="casual" android:textStyle="bold"/></LinearLayout>
+            <LinearLayout android:id="@+id/layoutSpace" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="4dp" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true" android:contentDescription="@string/desc_space"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🌌" android:textSize="32sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_space" android:textColor="#000000" android:textSize="13sp" android:fontFamily="casual" android:textStyle="bold"/></LinearLayout>
+            <LinearLayout android:id="@+id/layoutTime" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="4dp" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true" android:contentDescription="@string/desc_time"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⏳" android:textSize="32sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_time" android:textColor="#000000" android:textSize="13sp" android:fontFamily="casual" android:textStyle="bold"/></LinearLayout>
+            <LinearLayout android:id="@+id/layoutOcean" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="4dp" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true" android:contentDescription="@string/desc_ocean"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🚢" android:textSize="32sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_ocean" android:textColor="#000000" android:textSize="13sp" android:fontFamily="casual" android:textStyle="bold"/></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+            <LinearLayout android:id="@+id/layoutRomance" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="4dp" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true" android:contentDescription="@string/desc_romance"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="❤️" android:textSize="32sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_romance" android:textColor="#000000" android:textSize="13sp" android:fontFamily="casual" android:textStyle="bold"/></LinearLayout>
+            <LinearLayout android:id="@+id/layoutAction" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="4dp" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true" android:contentDescription="@string/desc_action"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="💥" android:textSize="32sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_action" android:textColor="#000000" android:textSize="13sp" android:fontFamily="casual" android:textStyle="bold"/></LinearLayout>
+            <LinearLayout android:id="@+id/layoutMusical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="4dp" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true" android:contentDescription="@string/desc_musical"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🎸" android:textSize="32sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_musical" android:textColor="#000000" android:textSize="13sp" android:fontFamily="casual" android:textStyle="bold"/></LinearLayout>
+            <LinearLayout android:id="@+id/layoutRoyalty" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="4dp" android:orientation="vertical" android:gravity="center" android:clickable="true" android:focusable="true" android:contentDescription="@string/desc_royalty"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👑" android:textSize="32sp"/><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lbl_royalty" android:textColor="#000000" android:textSize="13sp" android:fontFamily="casual" android:textStyle="bold"/></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDecode"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text="@string/decode_text"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:contentDescription="@string/desc_btn_decode"
+        app:layout_constraintBottom_toTopOf="@id/btnClearReel"
+        android:layout_marginBottom="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnClearReel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="[ CLEAR REEL ]"
+        android:textColor="#FF5555"
+        android:textSize="14sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:contentDescription="@string/desc_clear_reel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="4dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

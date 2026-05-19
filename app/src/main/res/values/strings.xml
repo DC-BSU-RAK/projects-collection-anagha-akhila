@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">CinemaCipher</string>
+    <string name="app_title">CINEMA CIPHER</string>
+    <string name="info_emoji">ℹ️</string>
+    <string name="tap_to_begin">tap emoji to begin…</string>
+    <string name="nan_text">NaN</string>
+    <string name="clear_text">CLEAR BUFFER</string>
+    <string name="decode_text">[ = DECODE PLOT ]</string>
+    <string name="processing_text">Decoding cinematic sequence…</string>
+
+    <string name="formula_append_template">%1$s + %2$s</string>
+    <string name="operator_append_template">%1$s %2$s </string>
+
+    <string name="op_plus">+</string>
+    <string name="op_multiply">×</string>
+    <string name="op_minus">−</string>
+    <string name="op_divide">÷</string>
+    <string name="op_clr">CLR</string>
+
+    <string name="desc_app_close">Terminate and close application workspace layout loop</string>
+    <string name="desc_btn_info">Application documentation help overview modal trigger button</string>
+    <string name="desc_op_plus">Formula plus structural math link symbol operation button</string>
+    <string name="desc_op_multiply">Formula multiplication structural link symbol button</string>
+    <string name="desc_op_minus">Formula minus structural link symbol button</string>
+    <string name="desc_op_divide">Formula division structural link symbol button</string>
+    <string name="desc_op_clr">Clear entire mathematical composition text stream buffer matrix</string>
+    <string name="desc_btn_decode">Execute cipher decryption sequence to reveal matched film scripts</string>
+    <string name="desc_clear_reel">Reset running simulation session memory variables completely back to zero state logs</string>
+
+    <string name="desc_wizard">Wizard narrative character tropes selection card component</string>
+    <string name="desc_cowboy">Cowboy frontier character tropes selection card component</string>
+    <string name="desc_alien">Alien sci-fi character tropes selection card component</string>
+    <string name="desc_shark">Shark nautical monster tropes selection card component</string>
+    <string name="desc_castle">Castle environment background scenery setting option selection brick layout</string>
+    <string name="desc_space">Deep space environment backdrop scenery setting option selection brick layout</string>
+    <string name="desc_time">Time travel chronographic environment background narrative modifier configuration card</string>
+    <string name="desc_ocean">Ocean ship marine scenery layout structural option setting parameter brick asset</string>
+    <string name="desc_romance">Romance tone and sub-plot script narrative tracking modifier option button</string>
+    <string name="desc_action">Action explosion sequence theme script modification factor tracking option selection module</string>
+    <string name="desc_musical">Musical instrumental song melody runtime genre adjustment configuration node asset card</string>
+    <string name="desc_royalty">Royalty crowns empire theme modification component structural selection grid module</string>
+
+    <string name="genre_header_prefix">CURRENT SYSTEM SCOPE: </string>
+    <string name="genre_none">AWAITING INPUT</string>
+    <string name="genre_fantasy">MYTHIC FANTASY</string>
+    <string name="genre_scifi">SCI-FI COSMOS</string>
+    <string name="genre_western">FRONTIER WESTERN</string>
+    <string name="genre_nautical">NAUTICAL VOYAGE</string>
+    <string name="genre_musical">SONIC CORE INDIE</string>
+    <string name="genre_romance">DRAMA &amp; ROMANCE</string>
+    <string name="genre_action">CHAOS BLOCKBUSTER</string>
+    <string name="genre_cult">SECRET CULT MODE</string>
+
+    <string name="movie_hp">🧙‍♂️ 🏰 👑 \n[MATCH: Harry Potter]</string>
+    <string name="movie_sw">👽 🌌 🤠 \n[MATCH: Star Wars / Space Western]</string>
+    <string name="movie_titanic">🚢 ❤️ 💥 \n[MATCH: Titanic]</string>
+    <string name="movie_jaws">🦈 🚢 💥 \n[MATCH: Jaws]</string>
+
+    <string name="movie_shrek">🎬 Shrek / The Chronicles of Narnia</string>
+    <string name="movie_merlin">🎬 Doctor Strange / Merlin</string>
+    <string name="movie_bttf">🎬 Back to the Future Part III</string>
+    <string name="movie_bebop">🎬 Firefly / Cowboy Bebop</string>
+    <string name="movie_alien">🎬 Interstellar / Alien</string>
+    <string name="movie_rim">🎬 Pacific Rim</string>
+    <string name="movie_meg">🎬 Life of Pi / The Meg</string>
+    <string name="movie_aquaman">🎬 Aquaman / Aquatopia</string>
+
+    <string name="movie_beauty">🎬 Beauty and the Beast</string>
+    <string name="movie_scott">🎬 Scott Pilgrim / Spinal Tap Wizard</string>
+    <string name="movie_django">🎬 Django Unchained / Mad Max</string>
+    <string name="movie_brokeback">🎬 Brokeback Mountain</string>
+    <string name="movie_et">🎬 E.T. The Extra-Terrestrial</string>
+    <string name="movie_ind_day">🎬 Independence Day / Predators</string>
+    <string name="movie_blue_sea">🎬 Deep Blue Sea</string>
+
+    <string name="movie_braveheart">🎬 The King\'s Speech / Braveheart</string>
+    <string name="movie_cinderella">🎬 Cinderella / Pride &amp; Prejudice</string>
+    <string name="movie_guardians">🎬 Guardians of the Galaxy</string>
+    <string name="movie_pirates">🎬 Pirates of the Caribbean</string>
+    <string name="movie_mamma_mia">🎬 Mamma Mia!</string>
+    <string name="movie_time_trav">🎬 About Time / The Time Traveler\'s Wife</string>
+    <string name="movie_la_la">🎬 La La Land / Yesterday</string>
+    <string name="movie_fury_road">🎬 Mad Max: Fury Road</string>
+
+    <string name="movie_secret_cult">🎬 SECRET CULT CLASSIC UNLOCKED\n[ Neon Abyss ]</string>
+
+    <string name="fallback_fantasy">🎬 Custom Fantasy Script [GENRE: Mythic Tales]</string>
+    <string name="fallback_scifi">🎬 Custom Sci-Fi Script [GENRE: Cosmic Horizon]</string>
+    <string name="fallback_western">🎬 Custom Western Script [GENRE: Frontier Outlaw]</string>
+    <string name="fallback_nautical">🎬 Custom High-Seas Script [GENRE: Nautical Voyage]</string>
+    <string name="fallback_musical">🎬 Custom Indie Musical [GENRE: Sonic Core]</string>
+
+    <string name="awaiting_formulas">Awaiting narrative parameters…</string>
+    <string name="nan_fallback">NaN: Unproduced Indie Script\n[GENRE: Unknown Plot Twist]</string>
+
+    <string name="lbl_wizard">WIZARD</string>
+    <string name="lbl_cowboy">COWBOY</string>
+    <string name="lbl_alien">ALIEN</string>
+    <string name="lbl_shark">SHARK</string>
+    <string name="lbl_castle">CASTLE</string>
+    <string name="lbl_space">SPACE</string>
+    <string name="lbl_time">TIME</string>
+    <string name="lbl_ocean">OCEAN</string>
+    <string name="lbl_romance">ROMANCE</string>
+    <string name="lbl_action">ACTION</string>
+    <string name="lbl_musical">MUSICAL</string>
+    <string name="lbl_royalty">ROYALTY</string>
+</resources>
