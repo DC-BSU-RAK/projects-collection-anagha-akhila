@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MidnightFM</string>
+    <string name="app_title">MIDNIGHT FM</string>
+    <string name="app_tagline">88.7 • AFTER DARK BROADCAST</string>
+
+    <string name="info_icon">ℹ️</string>
+    <string name="searching_feed">[ SEARCHING FOR SATELLITE FEED... ]</string>
+    <string name="mood_wizard">Wizard</string>
+    <string name="btn_generate">[ GENERATE FREQUENCY ]</string>
+    <string name="header_mood">SELECT TRANSMISSION MOOD</string>
+
+    <string name="nav_tune">TUNE IN</string>
+    <string name="nav_favorites">ARCHIVE</string>
+    <string name="nav_settings">CONSOLE</string>
+
+    <string name="modal_title">OPERATOR BROADCAST MANUAL</string>
+    <string name="modal_body">WELCOME TO MIDNIGHT FM 88.7.\n\nUse the master control deck configuration console to generate bespoke, late-night synthetic audio profiles inspired by 1980s synthwave subcultures, retro cassette aesthetics, and analog network signals.</string>
+    <string name="modal_dismiss">[ DISMISS LOGS ]</string>
+
+    <string name="desc_info">Launch interactive manual</string>
+    <string name="desc_vinyl">Rotating vinyl asset disc</string>
+</resources>
